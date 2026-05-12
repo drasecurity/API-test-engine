@@ -1,0 +1,31 @@
+{
+  "results": {
+    "tool": {
+      "name": "newman",
+    },
+    "summary": {
+      "tests": 1,
+      "passed": 0,
+      "failed": 1,
+      "pending": 0,
+      "skipped": 0,
+      "other": 0,
+      "start": 1706828654274,
+      "stop": 1706828655782
+    },
+    "tests": [
+      {
+        "name": "ctrf should not generate the same report with any tool",
+        "status": "failed",
+        "duration": 800,
+        "message": "Assertion Error",
+        "trace": "Error at /tests/ctrf.spec.js:45",
+      }
+    ],
+    "environment": {
+      "appName": "YourApp",
+      "buildName": "YourBuild",
+      "buildNumber": "1"
+    }
+  }
+}

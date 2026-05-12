@@ -1,0 +1,57 @@
+{
+  "summary": {
+    "tested": 3,
+    "passed": 1,
+    "failed": 2,
+    "pending": 0,
+    "skipped": 0,
+    "other": 0,
+    "start": 1771921020062,
+    "stop": 1771921020545
+  },
+  "tests": [
+    {
+      "name": {
+        "raw": "https://postman-echo.com/get?source=newman-sample-github-collection",
+        "protocol": "https",
+        "host": [
+          "postman-echo",
+          "com"
+        ],
+        "path": [
+          "get"
+        ],
+        "query": [
+          {
+            "key": "source",
+            "value": "newman-sample-github-collection",
+            "equals": true,
+            "description": ""
+          }
+        ],
+        "variable": []
+      },
+      "status": "OK",
+      "duration": 482,
+      "message": "",
+      "trace": "",
+      "data": "{}"
+    },
+    {
+      "name": "https://postman-echo.com/post",
+      "status": "",
+      "duration": 0,
+      "message": "",
+      "trace": "",
+      "data": ""
+    },
+    {
+      "name": "https://postman-echo.com/post",
+      "status": "",
+      "duration": 1,
+      "message": "",
+      "trace": "",
+      "data": ""
+    }
+  ]
+}

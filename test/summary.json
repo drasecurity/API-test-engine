@@ -1,0 +1,359 @@
+{
+  "cursor": {
+    "position": 0,
+    "iteration": 0,
+    "length": 1,
+    "cycles": 1,
+    "empty": false,
+    "eof": false,
+    "bof": true,
+    "cr": false,
+    "ref": "bd083954-07e2-446e-bb70-69da2da31fb4"
+  },
+  "summary": {
+    "collection": {
+      "_": {
+        "postman_id": "23b98424-d2c0-4c7d-800e-0bd841eb8495"
+      },
+      "item": [
+        {
+          "id": "0da45a06-a755-4b19-b1bf-5951ec03c449",
+          "name": "Simple GET Request",
+          "request": {
+            "url": {
+              "protocol": "https",
+              "path": [
+                "posts"
+              ],
+              "host": [
+                "jsonplaceholder",
+                "typicode",
+                "com"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "body": {}
+          },
+          "response": [],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "9e34f1b9-b071-4bbc-b033-14912e39fdd8",
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "",
+                  "pm.test(\"Response time is less than 200ms\", function () {",
+                  "    pm.expect(pm.response.responseTime).to.be.below(200);",
+                  "});"
+                ],
+                "_lastExecutionId": "0e68fabd-3f30-49d5-9afe-009e11490f6b"
+              }
+            }
+          ]
+        }
+      ],
+      "event": [],
+      "variable": [],
+      "info": {
+        "_postman_id": "23b98424-d2c0-4c7d-800e-0bd841eb8495",
+        "name": "Demo Collection",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+      }
+    },
+    "environment": {
+      "id": "7e020029-b23d-40a3-9fb6-280a7bc93e93",
+      "values": []
+    },
+    "globals": {
+      "id": "f267c3f2-0ed2-451f-8b2e-f02fd133ec06",
+      "values": []
+    },
+    "run": {
+      "stats": {
+        "iterations": {
+          "total": 1,
+          "pending": 0,
+          "failed": 0
+        },
+        "items": {
+          "total": 1,
+          "pending": 0,
+          "failed": 0
+        },
+        "scripts": {
+          "total": 1,
+          "pending": 0,
+          "failed": 0
+        },
+        "prerequests": {
+          "total": 1,
+          "pending": 0,
+          "failed": 0
+        },
+        "requests": {
+          "total": 1,
+          "pending": 0,
+          "failed": 0
+        },
+        "tests": {
+          "total": 1,
+          "pending": 0,
+          "failed": 0
+        },
+        "assertions": {
+          "total": 2,
+          "pending": 0,
+          "failed": 0
+        },
+        "testScripts": {
+          "total": 1,
+          "pending": 0,
+          "failed": 0
+        },
+        "prerequestScripts": {
+          "total": 0,
+          "pending": 0,
+          "failed": 0
+        }
+      },
+      "timings": {
+        "responseAverage": 89,
+        "responseMin": 89,
+        "responseMax": 89,
+        "responseSd": 0,
+        "dnsAverage": 0,
+        "dnsMin": 0,
+        "dnsMax": 0,
+        "dnsSd": 0,
+        "firstByteAverage": 0,
+        "firstByteMin": 0,
+        "firstByteMax": 0,
+        "firstByteSd": 0,
+        "started": 1556096542737
+      },
+      "executions": [
+        {
+          "cursor": {
+            "position": 0,
+            "iteration": 0,
+            "length": 1,
+            "cycles": 1,
+            "empty": false,
+            "eof": false,
+            "bof": true,
+            "cr": false,
+            "ref": "f3fc4502-5221-4574-a2dc-126888377ac1",
+            "httpRequestId": "f66f4935-10f8-4ef2-8105-f43f4882c481"
+          },
+          "item": {
+            "id": "0da45a06-a755-4b19-b1bf-5951ec03c449",
+            "name": "Simple GET Request",
+            "request": {
+              "url": {
+                "protocol": "https",
+                "path": [
+                  "posts"
+                ],
+                "host": [
+                  "jsonplaceholder",
+                  "typicode",
+                  "com"
+                ],
+                "query": [],
+                "variable": []
+              },
+              "method": "GET",
+              "body": {}
+            },
+            "response": [],
+            "event": [
+              {
+                "listen": "test",
+                "script": {
+                  "id": "9e34f1b9-b071-4bbc-b033-14912e39fdd8",
+                  "type": "text/javascript",
+                  "exec": [
+                    "pm.test(\"Status code is 200\", function () {",
+                    "    pm.response.to.have.status(200);",
+                    "});",
+                    "",
+                    "pm.test(\"Response time is less than 200ms\", function () {",
+                    "    pm.expect(pm.response.responseTime).to.be.below(200);",
+                    "});"
+                  ],
+                  "_lastExecutionId": "0e68fabd-3f30-49d5-9afe-009e11490f6b"
+                }
+              }
+            ]
+          },
+          "request": {
+            "url": {
+              "protocol": "https",
+              "path": [
+                "posts"
+              ],
+              "host": [
+                "jsonplaceholder",
+                "typicode",
+                "com"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "User-Agent",
+                "value": "PostmanRuntime/7.11.0",
+                "system": true
+              },
+              {
+                "key": "Accept",
+                "value": "*/*",
+                "system": true
+              },
+              {
+                "key": "Cache-Control",
+                "value": "no-cache",
+                "system": true
+              },
+              {
+                "key": "Postman-Token",
+                "value": "f353da91-8582-4b7d-ba2f-6df59ae72352",
+                "system": true
+              },
+              {
+                "key": "Host",
+                "value": "jsonplaceholder.typicode.com",
+                "system": true
+              },
+              {
+                "key": "accept-encoding",
+                "value": "gzip, deflate",
+                "system": true
+              },
+              {
+                "key": "Connection",
+                "value": "keep-alive",
+                "system": true
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "response": {
+            "id": "725409e4-f2aa-4a67-8b8e-13bf71176323",
+            "status": "OK",
+            "code": 200,
+            "header": [
+              {
+                "key": "Date",
+                "value": "Wed, 24 Apr 2019 09:02:22 GMT"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json; charset=utf-8"
+              },
+              {
+                "key": "Transfer-Encoding",
+                "value": "chunked"
+              },
+              {
+                "key": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "key": "Set-Cookie",
+                "value": "__cfduid=d9f98a699fa338b00c9745fda3a77fc3c1556096542; expires=Thu, 23-Apr-20 09:02:22 GMT; path=/; domain=.typicode.com; HttpOnly"
+              },
+              {
+                "key": "X-Powered-By",
+                "value": "Express"
+              },
+              {
+                "key": "Vary",
+                "value": "Origin, Accept-Encoding"
+              },
+              {
+                "key": "Access-Control-Allow-Credentials",
+                "value": "true"
+              },
+              {
+                "key": "Cache-Control",
+                "value": "public, max-age=14400"
+              },
+              {
+                "key": "Pragma",
+                "value": "no-cache"
+              },
+              {
+                "key": "Expires",
+                "value": "Wed, 24 Apr 2019 13:02:22 GMT"
+              },
+              {
+                "key": "X-Content-Type-Options",
+                "value": "nosniff"
+              },
+              {
+                "key": "Etag",
+                "value": "W/\"6b80-Ybsq/K6GwwqrYkAsFxqDXGC7DoM\""
+              },
+              {
+                "key": "Content-Encoding",
+                "value": "gzip"
+              },
+              {
+                "key": "Via",
+                "value": "1.1 vegur"
+              },
+              {
+                "key": "CF-Cache-Status",
+                "value": "HIT"
+              },
+              {
+                "key": "Expect-CT",
+                "value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+              },
+              {
+                "key": "Server",
+                "value": "cloudflare"
+              },
+              {
+                "key": "CF-RAY",
+                "value": "4cc6e5e098d534b8-LHR"
+              }
+            ],
+            "stream": {
+              "type": "Buffer",
+              "data": []
+            },
+            "cookie": [],
+            "responseTime": 89,
+            "responseSize": 27520
+          },
+          "id": "0da45a06-a755-4b19-b1bf-5951ec03c449",
+          "assertions": [
+            {
+              "assertion": "Status code is 200",
+              "skipped": false
+            },
+            {
+              "assertion": "Response time is less than 200ms",
+              "skipped": false
+            }
+          ]
+        }
+      ],
+      "transfers": {
+        "responseTotal": 27520
+      },
+      "failures": [],
+      "error": null
+    }
+  }
+}
